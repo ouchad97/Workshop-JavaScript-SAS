@@ -4,9 +4,60 @@
 
 Écrivez une fonction JavaScript qui prend deux nombres en paramètres et retourne leur somme. Utilisez cette fonction pour afficher la somme de deux nombres.
 
+<solution>
+### Étapes de résolution
+
+1.  **Déclaration de la fonction** : Créer une fonction nommée `somme` (ou `addition`) en utilisant le mot-clé `function`.
+2.  **Paramètres** : Entre les parenthèses de la fonction, définir deux paramètres, par exemple `(a, b)`.
+3.  **Valeur de retour** : À l'intérieur de la fonction, utiliser le mot-clé `return` pour renvoyer le résultat de l'addition `a + b`.
+4.  **Appel de la fonction** : Appeler cette fonction en lui passant des valeurs réelles (les "arguments") et afficher le résultat.
+
+**Code :**
+```javascript
+// 1, 2 et 3. Création de la fonction
+function additionner(a, b) {
+    return a + b;
+}
+
+// 4. Utilisation de la fonction
+let resultat = additionner(5, 7);
+console.log(`La somme est : ${resultat}`);
+
+// Test avec d'autres valeurs
+console.log(`Autre test (10 + 20) = ${additionner(10, 20)}`);
+```
+</solution>
+
 ### Challenge 2 : Fonction de Multiplication
 
 Écrivez une fonction JavaScript qui prend deux nombres en paramètres et retourne leur produit. Utilisez cette fonction pour afficher le produit de deux nombres.
+
+<solution>
+### Étapes de résolution
+
+1.  **Fonction classique ou fléchée** : On peut utiliser une fonction classique ou s'entraîner avec la syntaxe moderne des "fonctions fléchées" (arrow functions).
+2.  **Paramètres** : Définir deux paramètres.
+3.  **Retourner le produit** : Multiplier les deux nombres et utiliser `return`.
+4.  **Affichage** : Appeler la fonction et afficher.
+
+**Code :**
+```javascript
+// Méthode 1 : Fonction classique
+function multiplier(x, y) {
+    return x * y;
+}
+
+// Méthode 2 (Bonus) : Fonction fléchée
+const multiplierModerne = (x, y) => x * y;
+
+// Utilisation
+let a = 4;
+let b = 5;
+
+console.log(`Le produit de ${a} par ${b} donne : ${multiplier(a, b)}`);
+console.log(`Avec la fonction fléchée : ${multiplierModerne(a, b)}`);
+```
+</solution>
 
 ### Challenge 3 : Fonction de Maximum
 

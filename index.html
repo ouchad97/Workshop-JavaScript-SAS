@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Workshop JavaScript : parcours progressif et challenges pour apprenants.">
+  <title>Workshop JavaScript</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
+        <span class="brand-mark">JS</span>
+        <span>Workshop<br><strong>JavaScript</strong></span>
+      </a>
+      <div class="topbar-meta">
+        <span class="status-dot"></span>
+        <span>Parcours SAS</span>
+        <button class="theme-btn" id="theme-toggle" type="button" aria-label="Basculer le thème" title="Basculer le thème">🌙</button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Ouvrir le menu">☰</button>
+      </div>
+    </header>
+
+    <div class="workspace">
+      <aside class="sidebar" id="sidebar">
+        <nav class="lesson-nav" id="lesson-nav" aria-label="Navigation des notions"></nav>
+        <div class="sidebar-note">
+          <span class="note-icon">⌘</span>
+          <div><strong>Conseil</strong><br><span>Avance étape par étape et teste chaque idée.</span></div>
+        </div>
+      </aside>
+
+      <main class="main-content" id="main-content">
+        <section class="hero" id="hero">
+          <div class="hero-banner">
+            <div class="hero-copy">
+              <span class="eyebrow">Apprendre · pratiquer · comprendre</span>
+              <h1>Construis ta logique,<br><em>une notion à la fois.</em></h1>
+              <p>Un parcours JavaScript clair, pensé pour passer des premières variables aux algorithmes avec des exercices sans solution.</p>
+              <div class="hero-actions">
+                <button class="primary-button" id="start-button" type="button">Commencer le parcours <span>→</span></button>
+                <span class="hero-caption">10 étapes · challenges progressifs</span>
+              </div>
+            </div>
+            <div class="hero-orbit" aria-hidden="true">
+              <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+              <div class="code-card"><span>const</span> learning = <b>true</b>;<br><span>console</span>.log("go!");<i>_</i></div>
+            </div>
+          </div>
+
+          <div class="home-content">
+            <div class="home-section">
+              <span class="eyebrow">Introduction</span>
+              <h2>Pourquoi apprendre JavaScript ?</h2>
+              <p>JavaScript est un langage polyvalent utilisé dans les navigateurs, les serveurs et de nombreux environnements de développement. Vous apprendrez sa syntaxe et ses outils fondamentaux en pratiquant.</p>
+            </div>
+
+            <div class="home-section">
+              <span class="eyebrow">Mise en place</span>
+              <h2>Prérequis et premier test</h2>
+              <p>Installez <a href="https://nodejs.org/" target="_blank">Node.js</a> avant de commencer. Vérifiez ensuite l'installation dans le terminal :</p>
+              <pre><code>node --version</code></pre>
+              <p>Pour tester un fichier JavaScript, créez un fichier <code>test.js</code> contenant :</p>
+              <pre><code>console.log("Bonjour JavaScript !");</code></pre>
+              <p>Exécutez-le depuis le dossier du fichier :</p>
+              <pre><code>node test.js</code></pre>
+            </div>
+
+            <div class="home-section">
+              <span class="eyebrow">Parcours</span>
+              <h2>Objectifs du Workshop</h2>
+              <p>Voici la progression des notions, alignée sur le planning partagé :</p>
+              <div class="table-wrapper">
+                <table>
+                  <thead>
+                    <tr><th>Étape</th><th>Objectifs</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><strong>01</strong></td><td>Variables, constantes, types primitifs et <code>typeof</code></td></tr>
+                    <tr><td><strong>02</strong></td><td>Opérateurs arithmétiques, d'affectation, comparaisons strictes et opérateurs logiques</td></tr>
+                    <tr><td><strong>03</strong></td><td>Conditions : <code>if</code>, <code>else if</code>, <code>else</code> et <code>switch</code></td></tr>
+                    <tr><td><strong>04</strong></td><td>Boucles <code>for</code>, <code>while</code>, parcours et boucles imbriquées</td></tr>
+                    <tr><td><strong>05</strong></td><td>Chaînes : longueur, index, parcours et méthodes essentielles</td></tr>
+                    <tr><td><strong>06</strong></td><td>Tableaux : création, index, <code>length</code>, ajout, suppression et parcours</td></tr>
+                    <tr><td><strong>07</strong></td><td>Objets, propriétés, valeurs, accès et tableaux d'objets</td></tr>
+                    <tr><td><strong>08</strong></td><td>Fonctions classiques et fléchées, paramètres, arguments et <code>return</code></td></tr>
+                    <tr><td><strong>09</strong></td><td>Recherche linéaire et recherche binaire</td></tr>
+                    <tr><td><strong>10</strong></td><td>Tri à bulles, tri par sélection et autres algorithmes de tri</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="home-section">
+              <span class="eyebrow">Liens utiles</span>
+              <h2>Ressources recommandées</h2>
+              <div class="resources-grid">
+                <a class="resource-card" href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank">
+                  <strong>MDN Web Docs</strong>
+                  <span>Référence complète du langage JavaScript</span>
+                </a>
+                <a class="resource-card" href="https://javascript.info/" target="_blank">
+                  <strong>javascript.info</strong>
+                  <span>Parcours progressif et pratique</span>
+                </a>
+                <a class="resource-card" href="https://nodejs.org/" target="_blank">
+                  <strong>Node.js</strong>
+                  <span>Exécuter JavaScript en dehors du navigateur</span>
+                </a>
+                <a class="resource-card" href="https://stackoverflow.com/questions/tagged/javascript" target="_blank">
+                  <strong>Stack Overflow</strong>
+                  <span>Rechercher des réponses et poser des questions</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="lesson-view" id="lesson-view" hidden aria-labelledby="reader-title">
+          <button class="back-button" id="close-reader" type="button">← Retour au parcours</button>
+          <div class="reader-head"><span class="eyebrow" id="reader-step"></span><h2 id="reader-title"></h2><p id="reader-description"></p></div>
+          <div class="reader-body" id="reader-body"><div class="loader">Chargement de la fiche<span>...</span></div></div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="solution-modal" hidden>
+    <div class="modal-content">
+      <button class="modal-close" id="close-modal" type="button" aria-label="Fermer">×</button>
+      <div class="modal-header">
+        <span class="eyebrow">Solution Guidée</span>
+        <h2>Étapes de résolution</h2>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

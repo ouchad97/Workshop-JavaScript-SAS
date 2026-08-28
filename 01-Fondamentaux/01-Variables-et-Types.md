@@ -2,12 +2,57 @@
 ### Challenge 1 : Affichage Informations
 Écrivez un programme JavaScript qui permet d'afficher vos informations personnelles : nom, prénom, âge, sexe et adresse e-mail. Les données sont saisies par l'utilisateur.
 
+<solution>
+### Étapes de résolution
+
+1.  **Déclaration des variables** : On utilise `prompt()` pour demander à l'utilisateur de saisir ses informations et on stocke chaque réponse dans une variable (`let` ou `const`).
+2.  **Affichage** : On utilise `console.log()` ou `alert()` pour afficher le résultat, en combinant le texte et les variables avec des _template literals_ (les guillemets obliques \` \`).
+
+**Code :**
+```javascript
+// 1. Saisie des informations
+let nom = prompt("Quel est votre nom ?");
+let prenom = prompt("Quel est votre prénom ?");
+let age = prompt("Quel est votre âge ?");
+let sexe = prompt("Quel est votre sexe (M/F) ?");
+let email = prompt("Quelle est votre adresse e-mail ?");
+
+// 2. Affichage du résultat
+console.log(`Voici vos informations :
+- Nom : ${nom}
+- Prénom : ${prenom}
+- Âge : ${age} ans
+- Sexe : ${sexe}
+- E-mail : ${email}`);
+```
+</solution>
+
 ### Challenge 2 : Conversion de la température
 Écrivez un programme qui demande la température en Celsius et la transforme en Kelvin.
 Formule :
 ```
 K = C + 273.15
 ```
+
+<solution>
+### Étapes de résolution
+
+1.  **Saisie** : Demander la température en Celsius avec `prompt()`.
+2.  **Conversion en nombre** : La valeur renvoyée par `prompt()` est du texte (une chaîne de caractères). Il faut la convertir en nombre (avec `parseFloat()` ou `Number()`) pour faire un calcul mathématique, sinon JavaScript fera une concaténation au lieu d'une addition.
+3.  **Calcul et affichage** : Appliquer la formule et afficher.
+
+**Code :**
+```javascript
+// 1 et 2. Demander la température et la convertir en nombre
+let tempCelsius = parseFloat(prompt("Entrez la température en Celsius :"));
+
+// 3. Calcul de la température en Kelvin
+let tempKelvin = tempCelsius + 273.15;
+
+// Affichage
+console.log(`${tempCelsius}°C correspond à ${tempKelvin}K`);
+```
+</solution>
 
 ### Challenge 3 : Conversion de la distance
 Écrivez un programme qui demande la distance en kilomètres et la transforme en yards.

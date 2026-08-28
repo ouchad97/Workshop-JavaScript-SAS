@@ -4,9 +4,67 @@
 
 Écrivez un programme JavaScript qui demande deux nombres et affiche leur somme, leur différence, leur produit et leur quotient.
 
+<solution>
+### Étapes de résolution
+
+1.  **Saisie des nombres** : Utiliser `prompt()` pour demander les nombres et les convertir avec `parseFloat()`.
+2.  **Calculs** : Utiliser les opérateurs arithmétiques `+` (somme), `-` (différence), `*` (produit) et `/` (quotient).
+3.  **Affichage** : Afficher les résultats proprement avec `console.log()`.
+
+**Code :**
+```javascript
+// 1. Saisie des nombres
+let nb1 = parseFloat(prompt("Entrez le premier nombre :"));
+let nb2 = parseFloat(prompt("Entrez le deuxième nombre :"));
+
+// 2. Calculs
+let somme = nb1 + nb2;
+let difference = nb1 - nb2;
+let produit = nb1 * nb2;
+let quotient = nb1 / nb2;
+
+// 3. Affichage
+console.log(`Résultats pour ${nb1} et ${nb2} :`);
+console.log(`Somme : ${somme}`);
+console.log(`Différence : ${difference}`);
+console.log(`Produit : ${produit}`);
+console.log(`Quotient : ${quotient}`);
+```
+</solution>
+
 ### Challenge 2 : Échange de Valeurs
 
 Écrivez un programme JavaScript qui échange les valeurs de deux variables, puis affiche les valeurs avant et après l'échange.
+
+<solution>
+### Étapes de résolution
+
+1.  **Déclaration initiale** : Déclarer deux variables `a` et `b`.
+2.  **Affichage avant** : Afficher les valeurs actuelles de `a` et `b`.
+3.  **L'échange (Swap)** : Pour échanger deux variables sans perdre l'une de leurs valeurs, on utilise une troisième variable temporaire (`temp`).
+    - On sauvegarde `a` dans `temp`.
+    - On met `b` dans `a`.
+    - On met `temp` (l'ancien `a`) dans `b`.
+4.  **Affichage après** : Afficher les nouvelles valeurs.
+
+**Code :**
+```javascript
+// 1. Déclaration
+let a = 5;
+let b = 10;
+
+// 2. Affichage avant
+console.log(`Avant échange : a = ${a}, b = ${b}`);
+
+// 3. Échange avec variable temporaire
+let temp = a;  // On met le 5 en sécurité dans temp
+a = b;         // a vaut maintenant 10
+b = temp;      // b vaut maintenant 5 (l'ancienne valeur de a)
+
+// 4. Affichage après
+console.log(`Après échange : a = ${a}, b = ${b}`);
+```
+</solution>
 
 ### Challenge 3 : Opérateurs d'Affectation
 

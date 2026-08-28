@@ -7,7 +7,31 @@
 5 * 10 = 50 5 * 9 = 45 5 * 8 = 40 ... 5 * 1 = 5
 ```
 
-### Challenge 2 : pyramide d'étoile
+<solution>
+### Étapes de résolution
+
+1.  **Saisie** : Demander le nombre à l'utilisateur.
+2.  **Boucle inversée** : Au lieu d'aller de 1 à 10 (`i++`), on va configurer la boucle `for` pour partir de 10, s'arrêter à 1, et reculer à chaque tour (`i--`).
+3.  **Affichage** : On accumule le résultat ou on l'affiche directement.
+
+**Code :**
+```javascript
+let n = parseInt(prompt("Entrez le nombre de la table souhaitée :"));
+
+let affichage = "";
+
+// On commence à 10, tant qu'on est >= 1, on décrémente de 1
+for (let i = 10; i >= 1; i--) {
+    let resultat = n * i;
+    // On ajoute à la chaîne (si on veut tout afficher sur une ligne)
+    affichage += `${n} * ${i} = ${resultat}   `;
+}
+
+console.log(affichage);
+```
+</solution>
+
+### Challenge 2 : Pyramide d'étoiles
 
 ```
       *
@@ -18,7 +42,34 @@
  ***********
 *************
 ```
-Écrire le programme pour avoir un pyramide d'étoile, le nombre des lignes à composer est demandé à l’utilisateur.(chaque ligne doit avoir un nombre premier d'étoiles.
+Écrire le programme pour avoir un pyramide d'étoile, le nombre des lignes à composer est demandé à l’utilisateur (chaque ligne doit avoir un nombre impair d'étoiles).
+
+<solution>
+### Étapes de résolution
+
+1.  **Saisie** : Demander le nombre de lignes (hauteur de la pyramide).
+2.  **Boucle principale (lignes)** : On boucle de 1 à `lignes`.
+3.  **Gérer les espaces** : À chaque ligne `i`, il faut des espaces avant les étoiles. Plus on est haut dans la pyramide, plus il y a d'espaces (`lignes - i` espaces).
+4.  **Gérer les étoiles** : Chaque ligne a un nombre impair d'étoiles. La formule mathématique pour avoir une suite de nombres impairs (1, 3, 5, 7...) est `(2 * i) - 1`.
+5.  **Construction et affichage** : À chaque itération, on fabrique la chaîne de la ligne, puis on l'affiche.
+
+**Code :**
+```javascript
+let lignes = parseInt(prompt("Entrez la hauteur de la pyramide :"));
+
+// Boucle pour chaque ligne
+for (let i = 1; i <= lignes; i++) {
+    // Répéter un espace (lignes - i) fois
+    let espaces = " ".repeat(lignes - i);
+    
+    // Répéter une étoile (2 * i - 1) fois
+    let etoiles = "*".repeat(2 * i - 1);
+    
+    // Afficher la ligne complète
+    console.log(espaces + etoiles);
+}
+```
+</solution>
 
 ### Challenge 3 : Affichage des Nombres Premiers
 

@@ -4,9 +4,58 @@
 
 Écrivez un programme qui demande un nombre et affiche si ce nombre est pair ou impair.
 
+<solution>
+### Étapes de résolution
+
+1.  **Saisie** : Demander le nombre à l'utilisateur via `prompt()` et le convertir avec `parseInt()`.
+2.  **Condition** : Un nombre est pair si le reste de sa division par 2 est égal à 0. On utilise l'opérateur modulo `%` pour cela.
+3.  **Affichage** : Utiliser un bloc `if...else` pour afficher le résultat approprié.
+
+**Code :**
+```javascript
+// 1. Demander le nombre
+let nombre = parseInt(prompt("Entrez un nombre entier :"));
+
+// 2 & 3. Vérifier la parité avec modulo
+if (nombre % 2 === 0) {
+    console.log(`Le nombre ${nombre} est pair.`);
+} else {
+    console.log(`Le nombre ${nombre} est impair.`);
+}
+```
+</solution>
+
 ### Challenge 2 : Voyelle ou Non
 
 Écrivez un programme JavaScript qui vérifie si un caractère saisi par l'utilisateur est une voyelle ou non en utilisant l'instruction `switch`.
+
+<solution>
+### Étapes de résolution
+
+1.  **Saisie** : Demander une lettre à l'utilisateur.
+2.  **Normalisation** : Pour éviter de vérifier les majuscules et minuscules séparément, on convertit la lettre saisie en minuscule avec `.toLowerCase()`.
+3.  **Test avec `switch`** : On vérifie si la lettre correspond à l'un des cas (`'a'`, `'e'`, `'i'`, `'o'`, `'u'`, `'y'`). Si oui, c'est une voyelle. Sinon (dans le `default`), c'est une consonne.
+
+**Code :**
+```javascript
+// 1 et 2. Demander la lettre et forcer en minuscule
+let lettre = prompt("Entrez une lettre :").toLowerCase();
+
+// 3. Vérifier avec switch
+switch (lettre) {
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+    case 'y':
+        console.log(`La lettre "${lettre}" est une voyelle.`);
+        break;
+    default:
+        console.log(`La lettre "${lettre}" est une consonne (ou un autre caractère).`);
+}
+```
+</solution>
 
 ### Challenge 3 : Somme de Deux Valeurs
 
