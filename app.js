@@ -70,7 +70,7 @@ function markdownToHtml(markdown) {
 
   const blocks = escaped.split(/```[a-z]*\n?/i);
   return blocks.map((block, index) => {
-    if (index % 2 === 1) return `<pre><code>${block.trim()}</code></pre>`;
+    if (index % 2 === 1) return `<pre><code>${block.replace(/^\n+|\n+$/g, '')}</code></pre>`;
     return block
       .replace(/^### (.*)$/gm, "<h3>$1</h3>")
       .replace(/^## (.*)$/gm, "<h2>$1</h2>")
