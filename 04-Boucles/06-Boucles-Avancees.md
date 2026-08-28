@@ -44,33 +44,6 @@ console.log(affichage);
 ```
 Écrire le programme pour avoir un pyramide d'étoile, le nombre des lignes à composer est demandé à l’utilisateur (chaque ligne doit avoir un nombre impair d'étoiles).
 
-<solution>
-### Étapes de résolution
-
-1.  **Saisie** : Demander le nombre de lignes (hauteur de la pyramide).
-2.  **Boucle principale (lignes)** : On boucle de 1 à `lignes`.
-3.  **Gérer les espaces** : À chaque ligne `i`, il faut des espaces avant les étoiles. Plus on est haut dans la pyramide, plus il y a d'espaces (`lignes - i` espaces).
-4.  **Gérer les étoiles** : Chaque ligne a un nombre impair d'étoiles. La formule mathématique pour avoir une suite de nombres impairs (1, 3, 5, 7...) est `(2 * i) - 1`.
-5.  **Construction et affichage** : À chaque itération, on fabrique la chaîne de la ligne, puis on l'affiche.
-
-**Code :**
-```javascript
-let lignes = parseInt(prompt("Entrez la hauteur de la pyramide :"));
-
-// Boucle pour chaque ligne
-for (let i = 1; i <= lignes; i++) {
-    // Répéter un espace (lignes - i) fois
-    let espaces = " ".repeat(lignes - i);
-    
-    // Répéter une étoile (2 * i - 1) fois
-    let etoiles = "*".repeat(2 * i - 1);
-    
-    // Afficher la ligne complète
-    console.log(espaces + etoiles);
-}
-```
-</solution>
-
 ### Challenge 3 : Affichage des Nombres Premiers
 
 Écrivez un programme JavaScript qui lit un entier `n` et affiche tous les nombres premiers de 1 à `n`. Un nombre est considéré premier s'il est divisible uniquement par 1 et lui-même.
