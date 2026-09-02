@@ -37,10 +37,10 @@ Voici la progression des notions, alignée sur le planning partagé :
 | **02** | Opérateurs arithmétiques, d'affectation, comparaisons strictes et opérateurs logiques | [Opérateurs](./02-Operateurs/02-Operateurs.md) |
 | **03** | Conditions : `if`, `else if`, `else` et `switch` | [Conditions](./03-Conditions/03-Conditions.md), [Conditions avancées](./03-Conditions/04-Conditions-Avancees.md) |
 | **04** | Boucles `for`, `while`, parcours et boucles imbriquées | [Boucles](./04-Boucles/05-Boucles.md), [Boucles avancées](./04-Boucles/06-Boucles-Avancees.md) |
-| **05** | Chaînes : longueur, index, parcours et méthodes essentielles | [Chaînes](./05-Chaines/07-Chaines.md) |
-| **06** | Tableaux : création, index, `length`, ajout, suppression et parcours | [Tableaux](./06-Tableaux/08-Tableaux.md), [Mini-projet stock](./06-Tableaux/mini-projet-stock.md) |
-| **07** | Objets, propriétés, valeurs, accès et tableaux d'objets | [Objets](./07-Objets/09-Objets.md), [Mini-projet contacts](./07-Objets/mini-projet-contacts.md) |
-| **08** | Fonctions classiques et fléchées, paramètres, arguments et `return` | [Fonctions](./08-Fonctions/10-Fonctions.md) |
+| **05** | Fonctions classiques et fléchées, paramètres, arguments et `return` | [Fonctions](./08-Fonctions/10-Fonctions.md) |
+| **06** | Chaînes : longueur, index, parcours et méthodes essentielles | [Chaînes](./05-Chaines/07-Chaines.md) |
+| **07** | Tableaux : création, index, `length`, ajout, suppression et parcours | [Tableaux](./06-Tableaux/08-Tableaux.md), [Mini-projet stock](./06-Tableaux/mini-projet-stock.md) |
+| **08** | Objets, propriétés, valeurs, accès et tableaux d'objets | [Objets](./07-Objets/09-Objets.md), [Mini-projet contacts](./07-Objets/mini-projet-contacts.md) |
 | **09** | Recherche linéaire et recherche binaire | [Recherche et tri](./09-Recherche-et-Tri/11-Recherche-et-Tri.md) |
 | **10** | Tri à bulles, tri par sélection et autres algorithmes de tri | [Recherche et tri](./09-Recherche-et-Tri/11-Recherche-et-Tri.md) |
 

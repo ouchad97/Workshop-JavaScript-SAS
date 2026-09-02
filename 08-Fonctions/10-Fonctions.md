@@ -75,9 +75,9 @@ console.log(`Avec la fonction fléchée : ${multiplierModerne(a, b)}`);
 
 Écrivez une fonction JavaScript qui calcule le n-ième terme de la suite de Fibonacci. La fonction doit prendre un entier en paramètre et retourner le n-ième terme. Utilisez cette fonction pour afficher le terme de Fibonacci demandé.
 
-### Challenge 7 : Fonction d'Inversion de Chaîne
+### Challenge 7 : Fonction de Compte à Rebours
 
-Écrivez une fonction JavaScript qui inverse une chaîne de caractères. La fonction doit prendre une chaîne en paramètre et retourner la chaîne inversée. Utilisez cette fonction pour afficher une chaîne inversée.
+Écrivez une fonction JavaScript qui prend un entier positif en paramètre et affiche tous les nombres de cet entier jusqu'à `0`. Utilisez une boucle dans la fonction et appelez-la avec plusieurs valeurs pour vérifier son fonctionnement.
 
 ### Challenge 8 : Fonction de Vérification de Parité
 
