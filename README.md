@@ -46,6 +46,8 @@ Voici la progression des notions, alignée sur le planning partagé :
 
 ## Ressources recommandées
 
+Le [glossaire JavaScript](./glossaire.md) regroupe les définitions des principaux mots-clés et notions du workshop.
+
 Pour vous aider dans votre apprentissage, voici quelques ressources essentielles :
 
 - **Documentation :** [MDN Web Docs - JavaScript](https://developer.mozilla.org/fr/docs/Web/JavaScript) - Une référence complète du langage.

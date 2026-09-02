@@ -11,7 +11,8 @@ const lessons = [
   { id: "10", title: "Objets", description: "Modéliser des données réelles avec des propriétés claires.", file: "07-Objets/09-Objets.md", tag: "Modélisation" },
   { id: "11", title: "Recherche & tri", description: "Comparer les stratégies pour trouver et ordonner efficacement.", file: "09-Recherche-et-Tri/11-Recherche-et-Tri.md", tag: "Algorithmes" },
   { id: "P1", title: "Mini-projet stock", description: "Mettre les tableaux et les objets au service d'un vrai besoin.", file: "06-Tableaux/mini-projet-stock.md", tag: "Projet" },
-  { id: "P2", title: "Mini-projet contacts", description: "Construire un carnet de contacts avec des opérations utiles.", file: "07-Objets/mini-projet-contacts.md", tag: "Projet" }
+  { id: "P2", title: "Mini-projet contacts", description: "Construire un carnet de contacts avec des opérations utiles.", file: "07-Objets/mini-projet-contacts.md", tag: "Projet" },
+  { id: "G", title: "Glossaire JavaScript", description: "Retrouver rapidement la définition des mots-clés et notions du workshop.", file: "glossaire.md", tag: "Référence" }
 ];
 
 const nav = document.querySelector("#lesson-nav");
@@ -54,7 +55,7 @@ themeToggle.addEventListener('click', () => {
 function renderNav() {
   nav.innerHTML = lessons.map((lesson, index) => `
     <button class="lesson-link" type="button" data-id="${lesson.id}">
-      <span class="lesson-number">${lesson.id.startsWith("P") ? "⚑" : String(index + 1).padStart(2, "0")}</span>
+      <span class="lesson-number">${lesson.id.startsWith("P") ? "⚑" : lesson.id === "G" ? "Aa" : String(index + 1).padStart(2, "0")}</span>
       <span class="lesson-name">${lesson.title}</span>
     </button>`).join("");
 }
