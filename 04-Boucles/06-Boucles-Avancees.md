@@ -72,9 +72,9 @@ console.log(affichage);
 
 Écrivez un programme JavaScript qui calcule la puissance d'un nombre en utilisant une boucle `while`. Le programme doit demander la base (positive) et l'exposant (non négatif) et afficher la valeur résultante.
 
-### Challenge 10 : Générateur de Mot de Passe
+### Challenge 10 : Générateur de Code PIN
 
-Écrivez un programme JavaScript qui génère un mot de passe aléatoire de longueur `n`, où `n` est entré par l’utilisateur. Le mot de passe doit contenir des lettres majuscules, des lettres minuscules et des chiffres.
+Écrivez un programme JavaScript qui génère un code PIN aléatoire de longueur `n`, où `n` est entré par l’utilisateur. Le code PIN doit contenir uniquement des chiffres générés un par un dans une boucle.
 
 ### Challenge 11 : Moyenne des Nombres
 
